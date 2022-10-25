@@ -20,6 +20,7 @@ public class MyBatisCompleteTest {
 
             int insertCar = sqlSession.insert("insertCar");
             System.out.println(insertCar);
+            System.out.println("lambda修改");
             sqlSession.commit();
         } catch (IOException e) {
             if(sqlSession != null){
